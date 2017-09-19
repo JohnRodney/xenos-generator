@@ -13,8 +13,8 @@ export default function() {
     .emptyLine()
     .wrap('Supported Commands:')
     .emptyLine()
-    .wrap('-help or -h or no arguements: Help menu')
+    .wrap('-help or -h or no arguments: Help menu')
     .wrap('-type or -t: the project type')
     .wrap('-name or -n: the project name')
     .render();
-}();
+};
