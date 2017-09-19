@@ -79,7 +79,7 @@ function generateEs6NodeServer(args) {
     return execp('npm install', { cwd: './' + name + '/' }).then(function () {
       console.log('Adding .babelrc'.green);
       return new Promise(function (res, rej) {
-        _fs2.default.writeFile('./' + name + '/.babelrc', _babelrc2.default, function (err) {
+        _fs2.default.writeFile('./' + name + '/.babelrc', (0, _babelrc2.default)(), function (err) {
           if (err) {
             return console.log(err);
           }
@@ -101,7 +101,7 @@ function generateEs6NodeServer(args) {
     }).then(function () {
       console.log('Adding .gitignore'.green);
       return new Promise(function (res, rej) {
-        _fs2.default.writeFile('./' + name + '/.gitignore', _gitignore2.default, function (err) {
+        _fs2.default.writeFile('./' + name + '/.gitignore', (0, _gitignore2.default)(), function (err) {
           if (err) {
             return console.log(err);
           }
