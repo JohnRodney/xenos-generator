@@ -4,7 +4,6 @@ import es6PackageJson from '../templates/es6/package.json';
 import es6Babelrc from '../templates/es6/.babelrc';
 import es6Gitignore from '../templates/es6/.gitignore';
 
-
 export default function generateEs6NodeServer(args) {
   const { name } = args;
 
