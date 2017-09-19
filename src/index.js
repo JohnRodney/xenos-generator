@@ -3,6 +3,7 @@ import fsp from './fsp';
 import helpText from './help';
 import registerArgs from './register-args';
 import generateEs6NodeServer from './generate-es6-node-server';
+import typeGeneratorMap from './type-generator-map';
 
 /* Setup an object for storing arguement key value pairs passed to this program */
 const args = {};
@@ -17,8 +18,4 @@ if(process.argv.indexOf("-help") != -1 || process.argv.indexOf("-h") != -1 || pr
   process.exit(1)
 }
 
-/* if the type is an es6 node server then generate it */
-const { type } = args;
-if (type === 'es6NodeServer') {
-  generateEs6NodeServer(args)
-}
+typeGeneratorMap[args.type](args);

@@ -18,6 +18,10 @@ var _generateEs6NodeServer = require('./generate-es6-node-server');
 
 var _generateEs6NodeServer2 = _interopRequireDefault(_generateEs6NodeServer);
 
+var _typeGeneratorMap = require('./type-generator-map');
+
+var _typeGeneratorMap2 = _interopRequireDefault(_typeGeneratorMap);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /* Setup an object for storing arguement key value pairs passed to this program */
@@ -33,9 +37,4 @@ if (process.argv.indexOf("-help") != -1 || process.argv.indexOf("-h") != -1 || p
   process.exit(1);
 }
 
-/* if the type is an es6 node server then generate it */
-var type = args.type;
-
-if (type === 'es6NodeServer') {
-  (0, _generateEs6NodeServer2.default)(args);
-}
+_typeGeneratorMap2.default[args.type](args);
