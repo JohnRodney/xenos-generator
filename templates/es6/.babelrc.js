@@ -1,7 +1,7 @@
 export default function() {
   return `
-    {
-      "presets": ["env"],
-    }
+{
+  "presets": ["env"],
+}
   `;
 }
