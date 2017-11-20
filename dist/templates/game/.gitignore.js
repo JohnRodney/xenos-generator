@@ -5,5 +5,5 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-  return "{\n  \"presets\": [\"env\"],\n}";
+  return "node_modules";
 };

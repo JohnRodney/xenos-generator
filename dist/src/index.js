@@ -14,10 +14,6 @@ var _registerArgs = require('./register-args');
 
 var _registerArgs2 = _interopRequireDefault(_registerArgs);
 
-var _generateEs6NodeServer = require('./generate-es6-node-server');
-
-var _generateEs6NodeServer2 = _interopRequireDefault(_generateEs6NodeServer);
-
 var _typeGeneratorMap = require('./type-generator-map');
 
 var _typeGeneratorMap2 = _interopRequireDefault(_typeGeneratorMap);

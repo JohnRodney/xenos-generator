@@ -2,7 +2,6 @@ import 'colors';
 import fsp from './fsp';
 import helpText from './help';
 import registerArgs from './register-args';
-import generateEs6NodeServer from './generate-es6-node-server';
 import typeGeneratorMap from './type-generator-map';
 
 /* Setup an object for storing arguement key value pairs passed to this program */
