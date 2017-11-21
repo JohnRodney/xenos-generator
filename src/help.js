@@ -15,6 +15,9 @@ export default function() {
     .emptyLine()
     .wrap('-help or -h or no arguments: Help menu')
     .wrap('-type or -t: the project type')
+    .wrap('supported types: ')
+    .wrap('* es6NodeServer')
+    .wrap('* es6GameWebpack')
     .wrap('-name or -n: the project name')
     .render();
 };

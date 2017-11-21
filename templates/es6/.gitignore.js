@@ -1,5 +1,3 @@
 export default function() {
-  return `
-node_modules
-  `;
+  return `node_modules`;
 }

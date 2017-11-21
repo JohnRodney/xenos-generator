@@ -5,5 +5,5 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-  return "\n    node_modules\n  ";
+  return "node_modules";
 };
